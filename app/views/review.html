@@ -1,1 +1,18 @@
-<p>This is the review view.</p>
+<div ng-init="init();">
+  <h4>Reviews for driver {{driverId}}</h4>
+  <table>
+    <thead>
+    <tr>
+      <td>Rating</td>
+      <td>Description</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="review in reviews">
+      <td>{{review.rating}}</td>
+      <td>{{review.description}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+

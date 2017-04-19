@@ -34,7 +34,7 @@ angular
         controller: 'DriverCtrl',
         controllerAs: 'driver'
       })
-      .when('/review', {
+      .when('/drivers/:driverId/reviews', {
         templateUrl: 'views/review.html',
         controller: 'ReviewCtrl',
         controllerAs: 'review'
