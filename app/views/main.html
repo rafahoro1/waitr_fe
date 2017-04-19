@@ -1,4 +1,4 @@
-<div class="row marketing">
+<div class="row" ng-init="init()">
   <h4>Drivers</h4>
   <table>
     <!--<thead>-->
@@ -7,14 +7,8 @@
     <!--</tr>-->
     <!--</thead>-->
     <tbody>
-    <tr>
-      <td><a href="/#!/drivers/dr_1">dr_1</a></td>
-    </tr>
-    <tr>
-      <td><a href="/#!/drivers/dr_2">dr_2</a></td>
-    </tr>
-    <tr>
-      <td><a href="/#!/drivers/dr_nr">dr_nr</a></td>
+    <tr ng-repeat="driver in drivers">
+      <td><a href="/#!/drivers/{{driver}}">{{driver}}</a></td>
     </tr>
     </tbody>
   </table>
