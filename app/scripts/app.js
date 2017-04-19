@@ -29,7 +29,7 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
-      .when('/driver', {
+      .when('/drivers/:driverId', {
         templateUrl: 'views/driver.html',
         controller: 'DriverCtrl',
         controllerAs: 'driver'

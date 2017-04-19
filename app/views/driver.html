@@ -1,1 +1,18 @@
 <p>This is the driver view.</p>
+<div ng-init="init();">
+  <div>
+    <div>
+      <label for="driverid"> Id:</label>
+      <input id="driverid" type="text" disabled value="{{driver.id}}">
+    </div>
+    <div>
+      <label for="driverName"> Name:</label>
+      <input id="driverName" type="text" disabled value="{{driver.name}}">
+    </div>
+    <div>
+      <label for="driverCurrentLocation"> Current Location:</label>
+      <input id="driverCurrentLocation" type="text" disabled
+             value="{{driver.current_location.latitude}} - {{driver.current_location.longitude}}">
+    </div>
+  </div>
+</div>
