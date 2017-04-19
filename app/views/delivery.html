@@ -1,1 +1,17 @@
 <p>This is the delivery view.</p>
+<div ng-init="init();">
+  <div>
+    <form ng-submit="createDeliveryReview()">
+
+      <div>
+        <label for="rating"> Rating:</label>
+        <input id="rating" type="text"  ng-model="review.rating">
+      </div>
+      <div>
+        <label for="description"> Description:</label>
+        <input id="description" type="text"  ng-model="review.description">
+      </div>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</div>
