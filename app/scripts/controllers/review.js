@@ -23,7 +23,7 @@
 
     function init() {
       console.log('In ReviewCtrl');
-      $scope.driverId=  $routeParams.driverId;
+      $scope.driverId = $routeParams.driverId;
       getReviews(URI);
     }
 
@@ -36,5 +36,5 @@
           console.error(err);
         });
     }
-  };
+  }
 })();

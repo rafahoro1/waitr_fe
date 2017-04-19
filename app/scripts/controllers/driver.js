@@ -12,7 +12,7 @@
     .controller('DriverCtrl', ['$scope', '$routeParams', 'networkService', DriverCtrl]);
 
   function DriverCtrl($scope, $routeParams, networkService) {
-    const URI = "http://localhost:8000/drivers/"+$routeParams.driverId;
+    const URI = 'http://localhost:8000/drivers/'+$routeParams.driverId;
     angular.extend($scope, {
       init: init
     });
@@ -20,7 +20,7 @@
     ////////////
 
     function init() {
-      console.log('In DeliveryCtrl');
+      console.log('In DriverCtrl');
       getDrivers(URI);
     }
 
@@ -33,6 +33,5 @@
           console.error(err);
         });
     }
-  };
-
+  }
 })();
