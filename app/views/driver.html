@@ -1,17 +1,34 @@
-<div ng-init="init();">
-  <div>
-    <div>
-      <label for="driverid"> Id:</label>
-      <input id="driverid" type="text" disabled value="{{driver.id}}">
-    </div>
-    <div>
-      <label for="driverName"> Name:</label>
-      <input id="driverName" type="text" disabled value="{{driver.name}}">
-    </div>
-    <div>
-      <label for="driverCurrentLocation"> Current Location:</label>
-      <input id="driverCurrentLocation" type="text" disabled
-             value="{{driver.current_location.latitude}} - {{driver.current_location.longitude}}">
+<div ng-init="init();" class="tab-pane">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h2 class="panel-title">Drivers</h2>
+        </div>
+        <div class="panel-body">
+          <section> <!-- variables table -->
+            <div class="row">
+              <div class="col-xs-12">
+                <div>
+                  <div class="form-group">
+                    <label for="driverid"> Id:</label>
+                    <input id="driverid" type="text" disabled value="{{driver.id}}">
+                  </div>
+                  <div class="form-group">
+                    <label for="driverName"> Name:</label>
+                    <input id="driverName" type="text" disabled value="{{driver.name}}">
+                  </div>
+                  <div class="form-group">
+                    <label for="driverCurrentLocation"> Current Location:</label>
+                    <input id="driverCurrentLocation" type="text" disabled
+                           value="{{driver.current_location.latitude}} - {{driver.current_location.longitude}}">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
     </div>
   </div>
 </div>

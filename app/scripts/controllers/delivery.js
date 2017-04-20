@@ -8,9 +8,9 @@
    * Controller of the waitrFeApp
    */
   angular.module('waitrFeApp')
-    .controller('DeliveryCtrl', ['$scope', '$routeParams', 'networkService', DeliveryCtrl]);
+    .controller('DeliveryCtrl', ['$scope', '$routeParams', 'networkService', 'toaster',DeliveryCtrl]);
 
-  function DeliveryCtrl($scope, $routeParams, networkService) {
+  function DeliveryCtrl($scope, $routeParams, networkService, toast) {
     const URI = 'http://localhost:8000/drivers/' + $routeParams.driverId + '/deliveries/' + $routeParams.deliveryId + '/review';
     angular.extend($scope, {
       init: init,
@@ -21,6 +21,8 @@
 
     function init() {
       console.log('In DeliveryCtrl');
+      $scope.deliveryId= $routeParams.deliveryId;
+      $scope.driverId= $routeParams.driverId;
     }
 
     function createDeliveryReview() {
@@ -30,10 +32,12 @@
       };
       networkService.post(URI, data)
         .then(function (response) {
-          $scope.driver = response;
+          $scope.review = {};
+          toast.pop('info','DeliveryReview succesfully created');
         })
         .catch(function (err) {
-          console.error(err);
+          toast.pop('error',err.data.message);
+          console.error(JSON.stringify(err));
         });
     }
   }

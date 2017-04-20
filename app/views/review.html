@@ -1,18 +1,37 @@
-<div ng-init="init();">
-  <h4>Reviews for driver {{driverId}}</h4>
-  <table>
-    <thead>
-    <tr>
-      <td>Rating</td>
-      <td>Description</td>
-    </tr>
-    </thead>
-    <tbody>
-    <tr ng-repeat="review in reviews">
-      <td>{{review.rating}}</td>
-      <td>{{review.description}}</td>
-    </tr>
-    </tbody>
-  </table>
+<div ng-init="init();" class="tab-pane">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h2 class="panel-title">Reviews for driver {{driverId}}</h2>
+        </div>
+        <div class="panel-body">
+          <section> <!-- variables table -->
+            <div class="row">
+              <div class="col-xs-12">
+
+                <div class="table-responsive">
+                  <table class="table table-bordered table-condensed">
+                    <thead>
+                    <tr>
+                      <td>Rating</td>
+                      <td>Description</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="review in reviews">
+                      <td>{{review.rating}}</td>
+                      <td>{{review.description}}</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
