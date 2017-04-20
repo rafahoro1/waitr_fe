@@ -21,7 +21,7 @@
     //////////
 
     function init(){
-      console.log('in MainCtrl');
+      //console.log('in MainCtrl');
       $scope.deliveryId=Math.floor((Math.random() * 10000) + 1);
       $scope.drivers = [
         'dr_1',

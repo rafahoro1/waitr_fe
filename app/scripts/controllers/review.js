@@ -10,10 +10,10 @@
    * Controller of the waitrFeApp
    */
   angular.module('waitrFeApp')
-    .controller('ReviewCtrl', ['$scope', '$routeParams', 'networkService', 'toaster', ReviewCtrl]);
+    .controller('ReviewCtrl', ['$scope', '$routeParams', 'networkService', 'constants', 'toaster', ReviewCtrl]);
 
-  function ReviewCtrl($scope, $routeParams, networkService, toast) {
-    const URI = 'http://localhost:8000/drivers/' + $routeParams.driverId + '/reviews';
+  function ReviewCtrl($scope, $routeParams, networkService, constants, toast) {
+    const URI = constants.API_URL + '/drivers/' + $routeParams.driverId + '/reviews';
 
     angular.extend($scope, {
       init: init

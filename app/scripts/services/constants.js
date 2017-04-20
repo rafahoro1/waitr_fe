@@ -8,4 +8,6 @@
  * Constant in the waitrFeApp.
  */
 angular.module('waitrFeApp')
-  .constant('constants', 42);
+  .constant('constants', {
+    API_URL:'http://localhost:8000'
+  });

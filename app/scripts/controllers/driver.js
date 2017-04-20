@@ -9,10 +9,10 @@
    * Controller of the waitrFeApp
    */
   angular.module('waitrFeApp')
-    .controller('DriverCtrl', ['$scope', '$routeParams', 'networkService', 'toaster',DriverCtrl]);
+    .controller('DriverCtrl', ['$scope', '$routeParams', 'networkService', 'constants', 'toaster',DriverCtrl]);
 
-  function DriverCtrl($scope, $routeParams, networkService, toast) {
-    const URI = 'http://localhost:8000/drivers/'+$routeParams.driverId;
+  function DriverCtrl($scope, $routeParams, networkService, constants, toast) {
+    const URI = constants.API_URL + '/drivers/'+$routeParams.driverId;
     angular.extend($scope, {
       init: init
     });
@@ -20,7 +20,7 @@
     ////////////
 
     function init() {
-      console.log('In DriverCtrl');
+      //console.log('In DriverCtrl');
       getDrivers(URI);
     }
 
