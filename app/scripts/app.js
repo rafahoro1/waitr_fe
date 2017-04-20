@@ -25,11 +25,6 @@ angular
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
-      .when('/about', {
-        templateUrl: 'views/about.html',
-        controller: 'AboutCtrl',
-        controllerAs: 'about'
-      })
       .when('/drivers/:driverId', {
         templateUrl: 'views/driver.html',
         controller: 'DriverCtrl',
