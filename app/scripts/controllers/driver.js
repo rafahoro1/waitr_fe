@@ -12,7 +12,7 @@
     .controller('DriverCtrl', ['$scope', '$routeParams', 'networkService', 'constants', 'toaster',DriverCtrl]);
 
   function DriverCtrl($scope, $routeParams, networkService, constants, toast) {
-    const URI = constants.API_URL + '/drivers/'+$routeParams.driverId;
+    var URI = constants.API_URL + '/drivers/'+$routeParams.driverId;
     angular.extend($scope, {
       init: init
     });

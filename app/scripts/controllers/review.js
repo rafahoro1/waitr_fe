@@ -13,7 +13,7 @@
     .controller('ReviewCtrl', ['$scope', '$routeParams', 'networkService', 'constants', 'toaster', ReviewCtrl]);
 
   function ReviewCtrl($scope, $routeParams, networkService, constants, toast) {
-    const URI = constants.API_URL + '/drivers/' + $routeParams.driverId + '/reviews';
+    var URI = constants.API_URL + '/drivers/' + $routeParams.driverId + '/reviews';
 
     angular.extend($scope, {
       init: init

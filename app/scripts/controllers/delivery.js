@@ -11,7 +11,7 @@
     .controller('DeliveryCtrl', ['$scope', '$routeParams', 'networkService', 'constants', 'toaster',DeliveryCtrl]);
 
   function DeliveryCtrl($scope, $routeParams, networkService, constants, toast) {
-    const URI = constants.API_URL + '/drivers/' + $routeParams.driverId + '/deliveries/' + $routeParams.deliveryId + '/review';
+    var URI = constants.API_URL + '/drivers/' + $routeParams.driverId + '/deliveries/' + $routeParams.deliveryId + '/review';
     angular.extend($scope, {
       init: init,
       createDeliveryReview: createDeliveryReview

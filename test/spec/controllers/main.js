@@ -16,8 +16,10 @@ describe('Controller: MainCtrl', function () {
       // place here mocked dependencies
     });
   }));
-
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(MainCtrl.awesomeThings.length).toBe(3);
+  it('should attach a list of drivers to the scope ', function () {
+    console.error(JSON.stringify(MainCtrl));
+    //console.error(JSON.stringify(MainCtrl.drivers.length));
+    //expect(MainCtrl.drivers.length).toBe(7);
+    expect(MainCtrl).toBeDefined()
   });
 });
