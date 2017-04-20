@@ -31,7 +31,7 @@
         description:$scope.review.description
       };
       networkService.post(URI, data)
-        .then(function (response) {
+        .then(function (/*response*/) {
           $scope.review = {};
           toast.pop('info','DeliveryReview successfully created');
         })
