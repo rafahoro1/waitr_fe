@@ -10,16 +10,15 @@
             <div class="col-xs-12">
               <div class="table-responsive">
                 <table class="table table-bordered table-condensed">
-                  <!--<thead>-->
-                  <!--<tr>-->
-                  <!--<td>Id</td>-->
-                  <!--<td>Review</td>-->
-                  <!--</tr>-->
-                  <!--</thead>-->
+                  <thead>
+                  <tr>
+                  <th>Driver</th>
+                  <th>Action</th>
+                  </tr>
+                  </thead>
                   <tbody>
                   <tr ng-repeat="driver in drivers">
                     <td><a href="/#!/drivers/{{driver}}"> {{driver}} </a></td>
-                    <td><a href="/#!/drivers/{{driver}}/reviews"> Driver Reviews </a></td>
                     <td><a href="/#!/drivers/{{driver}}/deliveries/{{deliveryId}}_{{$index}}/review">
                        Create delivery review </a></td>
                   </tr>
