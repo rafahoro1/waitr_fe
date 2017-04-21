@@ -36,7 +36,7 @@
           toast.pop('info','DeliveryReview successfully created');
         })
         .catch(function (err) {
-          toast.pop('error',err.data.message);
+          toast.pop('error',err && err.data && err.data.message || "Error posting review to backend");
           console.error(JSON.stringify(err));
         });
     }

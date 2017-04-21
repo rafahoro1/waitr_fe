@@ -35,7 +35,7 @@
           $scope.driver = response;
         })
         .catch(function (err) {
-          toast.pop('error',err.data.message);
+          toast.pop('error',err && err.data && err.data.message || "Error getting drivers from backend");
           console.error(JSON.stringify(err));
         });
     }
@@ -46,7 +46,7 @@
           $scope.reviews = response;
         })
         .catch(function (err) {
-          toast.pop('error',err.data.message);
+          toast.pop('error',err && err.data && err.data.message || "Error getting reviews from backend");
           console.error(err);
         });
     }

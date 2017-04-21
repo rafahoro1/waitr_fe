@@ -30,11 +30,6 @@ angular
         controller: 'DriverCtrl',
         controllerAs: 'driver'
       })
-      .when('/drivers/:driverId/reviews', {
-        templateUrl: 'views/review.html',
-        controller: 'ReviewCtrl',
-        controllerAs: 'review'
-      })
       .when('/drivers/:driverId/deliveries/:deliveryId/review', {
         templateUrl: 'views/delivery.html',
         controller: 'DeliveryCtrl',
