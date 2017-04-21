@@ -17,9 +17,6 @@ describe('Controller: MainCtrl', function () {
     });
   }));
   it('should attach a list of drivers to the scope ', function () {
-    console.error(JSON.stringify(MainCtrl));
-    //console.error(JSON.stringify(MainCtrl.drivers.length));
-    //expect(MainCtrl.drivers.length).toBe(7);
     expect(MainCtrl).toBeDefined()
   });
 });
