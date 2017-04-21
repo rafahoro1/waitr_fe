@@ -17,6 +17,6 @@ describe('Controller: MainCtrl', function () {
     });
   }));
   it('should attach a list of drivers to the scope ', function () {
-    expect(MainCtrl).toBeDefined()
+    expect(MainCtrl).toBeDefined();
   });
 });
