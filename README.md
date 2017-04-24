@@ -3,7 +3,7 @@
 ## What is this?
 This is an implementation (front-end part) of the [coding_challenge.md](https://github.com/WaitrInc/coding-challenge/blob/master/coding_challenge.md)
 
-See also the README.md file on [waitr-be](https://github.com/rafahoro1/waitr_fe) project.
+See also the README.md file on [waitr-be](https://github.com/rafahoro1/waitr_be) project.
 
 ## Build & development
 First all, install the dependencies:
@@ -37,7 +37,7 @@ Running `grunt test` will run the unit tests with karma.
  - A back button or some kind of navigation may help (altough you can just use the browser's back button)
  - Better tests
  - Take values from some config file or the environment, to allow easier deployment (currently in services/contants.js)
- - Althoug bootstrap does a good job, the UI can be imporved
+ - Althoug bootstrap does a good job, the UI can be improved
  - I18N (or at least remove the hardcoded messages from the code)
  - Better error handling/prevention currently you can 'submit' an empty review, and no warning message is shown. Although no post is made to the BE.
 
