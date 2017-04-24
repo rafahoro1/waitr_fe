@@ -1,9 +1,9 @@
-# waitr-fe
+# waitr-FE
 
 ## What is this?
-This is an implementation (front-end part) of the [https://github.com/WaitrInc/coding-challenge/blob/master/coding_challenge.md]()
+This is an implementation (front-end part) of the [coding_challenge.md](https://github.com/WaitrInc/coding-challenge/blob/master/coding_challenge.md)
 
-See also the README.md file on waitr-be project.
+See also the README.md file on [waitr-be](https://github.com/rafahoro1/waitr_fe) project.
 
 ## Build & development
 First all, install the dependencies:
